@@ -1,0 +1,119 @@
+/* Reset de estilos básicos */
+/* Define estilos iniciais para elementos HTML comuns. */
+body, h1, h2, p, img {
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos gerais */
+/* Define estilos gerais para o corpo do documento. */
+body {
+  font-family: Arial, sans-serif; /* Define a fonte para o corpo do texto. */
+  background-color: #83858488;
+}
+
+header {
+  background-color: #393a3985; /* Define a cor de fundo do cabeçalho. */
+  color: rgb(0, 0, 0); /* Define a cor do texto no cabeçalho. */
+  display: flex; /* Usa o modelo flex para o layout do cabeçalho. */
+  justify-content: space-between; /* Alinha os elementos horizontalmente com espaço entre eles. */
+  align-items: center; /* Alinha os elementos verticalmente ao centro. */
+  padding: 1rem; /* Adiciona espaçamento interno ao cabeçalho. */
+}
+
+.logo img {
+  max-width: 90px; /* Define a largura máxima da imagem do logo. */
+  border-radius: 50px;
+}
+
+nav ul {
+  list-style: none; /* Remove os marcadores de lista dos elementos da barra de navegação. */
+  display: flex; /* Usa o modelo flex para o layout da lista de navegação. */
+}
+
+nav a {
+  text-decoration: none; /* Remove a decoração de link padrão. */
+  color: rgb(0, 0, 0); /* Define a cor do texto dos links de navegação. */
+  margin: 0 1rem; /* Adiciona margem horizontal aos links. */
+  transition: color 0.3s; /* Aplica uma transição suave à cor do texto ao passar o mouse. */
+}
+
+nav a:hover {
+  color: #a13535; /* Define a cor do texto dos links de navegação ao passar o mouse sobre eles. */
+}
+
+main.product-list {
+  display: flex; /* Usa o modelo flex para o layout da lista de produtos. */
+  flex-wrap: wrap; /* Permite que os produtos se ajustem ao espaço disponível em várias linhas. */
+  justify-content: center; /* Alinha os produtos horizontalmente ao centro. */
+  padding: 2rem; /* Adiciona espaçamento interno à lista de produtos. */
+}
+
+.product-card {
+  border: 1px solid #00000055; /* Define uma borda de 1px sólida cinza claro para os cartões de produto. */
+  border-radius: 30px; /* Adiciona bordas arredondadas aos cartões de produto. */
+  padding: 1rem; /* Adiciona espaçamento interno aos cartões de produto. */
+  margin: 1rem; /* Define uma margem entre os cartões de produto. */
+  width: 250px; /* Define a largura dos cartões de produto. */
+  text-align: center; /* Centraliza o conteúdo dentro dos cartões de produto. */
+  box-shadow: 5 5px 4px #000000; /* Adiciona uma sombra sutil aos cartões de produto. */
+  background-color: #6f92dc3a;
+  height: 250px;
+}
+.product-card:hover{
+  transform: scale(1.1);
+}
+
+.product-card img {
+  max-width: 100%; /* Garante que a imagem do produto não exceda a largura do cartão. */
+  height:70%; /* Mantém a proporção da imagem. */
+  border-radius: 30px;
+}
+.product-card img:hover{
+  transform: scale(1.0);
+}
+#produtos{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 10px 10px 20px 20px;
+  background-color:#6f92dc1f;
+  color: #000000;
+}
+#quem-somos{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 10px 10px 20px 20px;
+  background-color:#6f92dc1f;
+  color: #000000;
+}
+#contato{
+  align-items: center;
+  text-align: center;
+  background-color:#6f92dc1f;
+  color: #000000;
+}
+
+footer {
+  text-align: center; /* Centraliza o texto no rodapé. */
+  padding: 1rem; /* Adiciona espaçamento interno ao rodapé. */
+}
+
+/* Responsividade */
+/* Define estilos para telas com largura máxima de 768px (dispositivos móveis). */
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column; /* Alinha os elementos do cabeçalho em coluna. */
+    text-align: center; /* Centraliza o texto no cabeçalho. */
+  }
+  .logo img {
+    margin-bottom: 1rem; /* Adiciona margem inferior à imagem do logo. */
+  }
+  nav ul {
+    margin-top: 1rem; /* Adiciona margem superior à lista de navegação. */
+    justify-content: center; /* Alinha os itens da lista de navegação ao centro. */
+  }
+}
